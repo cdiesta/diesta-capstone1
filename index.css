@@ -1,0 +1,651 @@
+/*Reset*/
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+
+/***** Top menu *****/
+
+.navbar {
+	background: #444;
+	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
+	backface-visibility: hidden;
+}
+.navbar.navbar-no-bg { background: #444; background: rgba(0, 0, 0, 0.5); }
+
+.navbar-dark .navbar-nav { font-size: 15px; color: #fff; text-transform: uppercase; }
+.navbar-dark .navbar-nav .nav-link { color: #fff; color: rgba(255, 255, 255, 0.8); }
+.navbar-dark .navbar-nav .nav-link:hover { color: black; }
+.navbar-dark .navbar-nav .nav-link:focus { color: black; outline: 0; }
+
+.navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
+
+.navbar-dark .navbar-text a { margin: 0 8px; font-size: 26px; color: #fff; color: rgba(255, 255, 255, 1.8); }
+.navbar-dark .navbar-text a:hover, 
+.navbar-dark .navbar-text a:focus { color: black; }
+
+
+.navbar-expand-md .navbar-nav .nav-link { padding-left: 0.6rem; padding-right: 0.6rem; }
+
+.navbar.navbar-no-bg { background: #444; }
+.navbar>.container { justify-content: center; }
+.navbar-dark .navbar-toggler { border-color: #444; }
+.navbar-dark .navbar-toggler:focus { background: #333; outline: 0; }
+.navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
+
+
+.nav-link{color: white; cursor: pointer; text-decoration: none;}
+
+.nav-link:hover{color:black; background-color:white;}
+
+/***** Loader *****/
+.loader {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(2turn);
+  }
+}
+
+
+
+
+
+/*Landing Page*/
+
+.parallax-head {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://img.freepik.com/free-photo/asian-businesswoman-sitting-desk-office-studying-graphs-large-computer-screen_1098-20500.jpg?w=740&t=st=1690532025~exp=1690532625~hmac=8785a2fe4ccc03736352a4c0395f37fc49b289b51e83e35df9340816968d100c);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*END OF PARALLAX*/
+
+
+.parallax-tools-head {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://media3.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e47vnzqir36leera38x1vgdhweng1tx2dwy7gzsb3cq&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*END OF PARALLAX*/
+
+
+
+
+.inner-bg {
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+/*.top-content .top-big-link { 
+	margin-top: 15px; 
+}*/
+/*
+.top-content .top-big-link a.btn { 
+	margin-top: 10px; 
+}*/
+
+/* logo */
+   
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 150px;
+
+}
+
+
+#logotop{
+  margin-left: 50px;
+  width: 100px;
+  height: 60px;
+
+}
+
+#logo-nav{
+	padding-top: 2px;
+  margin-left: 2vw;
+  max-width: 70px;
+  max-height: px;
+
+}
+
+
+
+
+.webname { font-size: 32px; }
+
+.top-content .text h1 {
+	margin-top: 25px;
+	color: #fff;
+}
+
+.top-content .description .welcome {
+	margin: 30px 0 10px 0;
+}
+
+.top-content .description p {opacity: 0.8; }
+
+.top-content .top-big-link {
+	margin-top: 45px;
+}
+
+
+
+/*About Me*/
+
+
+.side-size {
+	max-width: 55px;
+	max-height: auto;
+}
+
+#down {
+	margin-top: 5vh;
+	max-width: 40px;
+	max-height: auto;
+}
+
+#parent-picture {
+	position: relative;
+}
+
+#side-logo {
+	top: 2.4vw;
+  left: 3.4vw;
+	position: absolute;
+}
+
+.justify {
+	font-size: 80%;
+	text-align: justify;
+}
+
+.aboutme .img-shadow{
+	-webkit-box-shadow: 20px 20px 36px -21px rgba(0,0,0,0.6);
+	-moz-box-shadow: 20px 20px 36px -21px rgba(0,0,0,0.6);
+	box-shadow: 20px 20px 36px -21px rgba(0,0,0,0.6);
+}
+
+h1 {
+	font-size: 3rem;
+	font-wight: 900;
+}
+
+/* Timeline */
+/* Code Here ↓ */
+
+.timeline { 
+  padding: 1rem 1rem 0.5rem 1rem;
+  max-width: 100%;
+  max-height: 50%;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 25px -20px rgba(0,0,0.2);
+}
+
+.tl-content .tl-header, 
+.tl-content .tl-body {
+  padding-left: 20.6px;
+  border-left: 3px solid gainsboro;
+}
+
+.tl-body {
+  padding-bottom:0rem;
+  text-align: justify;
+  font-size: 11px;
+}
+
+.tl-content:last-child .tl-body {
+  border-left: 3px solid transparent;
+}
+
+.tl-header {
+  position: relative;
+  display: grid;
+  
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.tl-title {
+  font-weight: 600;
+  font-size: 1em;
+  border-bottom: 1px solid gainsboro;
+}
+
+.tl-time {
+  font-size: 0.7em;
+}
+
+.tl-marker {
+  display:block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50% / 50%;
+  background: gainsboro; 
+  left: -1.1rem;
+  top: 50%;
+  transform: translate(50%,-50%);
+}
+
+/*.tl-content-active .tl-marker {
+  width: 1.2vw;
+  height: auto;
+}*/
+
+.tl-content-active .tl-marker {
+  padding: 1.6px;
+  left: -1.25rem;
+  width: 18px;
+  height: 18px;
+  border: 2px solid orangered;
+  background-color: darkred;
+  background-clip: content-box;
+  box-shadow: 0 0 15px -2px indianred;
+}
+
+.tl-content-active .tl-title {
+  font-weight: 700;
+  
+  }
+ #cherrycard{
+ 	height: 280px;
+ }
+/* Code Here ↑ */
+/* Timeline */
+
+/*Projects*/
+
+.latest-blogs {
+	margin-left: 0.4rem;
+}
+
+.design {
+	font-size: 2vh;
+}
+
+.design1 {
+	font-size: 18px;
+}
+
+.design2 {
+	font-size: 15px;
+}
+
+.progress {
+	max-height: 20px;
+	max-width: 95%;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.previewAchievement {
+	width: 25%;
+	height: auto;
+}
+
+#progressbar-container {
+	max-width: 90%;
+	max-height: auto;
+}
+
+#htmlbar {
+	width: 100%;
+}
+
+#node {
+	width: 85%;
+}
+
+#wordpress {
+	width: 95%;
+}
+
+#cssbar {
+	width: 100%;
+}
+
+#jquery {
+	width: 90%;
+}
+
+#photoshop {
+	width: 90%;
+}
+
+#bootstrap {
+	width: 90%;
+}
+
+#java {
+	width: 88%;
+}
+
+#filmorabar {
+	width: 90%;
+}
+
+
+
+#cards {
+	top: -50px;
+	left: 10px;
+	width: 95.5%;
+	border-color: whitesmoke;
+
+	height: auto;
+	transition: all 0.3s;
+	-webkit-box-shadow: -44px -14px 60px -48px rgba(0,0,0,0.44);
+	-moz-box-shadow: -44px -14px 60px -48px rgba(0,0,0,0.44);
+	box-shadow: -44px -14px 60px -48px rgba(0,0,0,0.44);
+}
+
+#cards:hover{
+	transform: scale(1.15);
+}
+
+/*.cards1{
+    top: -50px;
+	left: 10px;
+	width: 300px;
+	border-color: whitesmoke;
+	height: 120px;
+}*/
+
+
+#pictureCard {
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;	
+}
+
+.icon-box {
+  position: relative;
+  margin-top:15px ;
+}
+
+#icon-box {
+	width: 75px;
+	height: auto;
+}
+
+#icon-box-shape {
+	width: 100px;
+	height: auto;
+}
+
+
+
+#socialicons{
+  margin-top:15px ;
+  width:  75px;
+  height: 75px;
+ }
+
+
+#minicontainer{
+	-webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.required::after {
+        content: ' *';
+        color: red;
+      }
+
+.btn-link-1 {
+	display: inline-block;
+	height: 50px;
+	text-align: center;	
+	
+	padding: 0 40px;
+	
+	background: #ff8a38; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffb24b 0%, #ff8a38 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb24b), color-stop(100%,#ff8a38)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffb24b 0%,#ff8a38 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffb24b 0%,#ff8a38 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffb24b 0%,#ff8a38 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffb24b 0%,#ff8a38 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#ff8a38',GradientType=0 ); /* IE6-9 */
+	
+	border: 0;
+	
+	font-size: 15px;
+    font-weight: 550;
+    line-height: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    -moz-border-radius: 40px; -webkit-border-radius: 40px; border-radius: 40px;
+    transition: all .3s;
+}
+.btn-link-1:hover, .btn-link-1:focus, .btn-link-1:active, .btn-link-1:active:focus,
+.btn-link-1.btn-primary:not(:disabled):not(.disabled):active,
+.btn-link-1.btn-primary:not(:disabled):not(.disabled):active:focus {
+	background: #ff8a38; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffb24b 0%, #ff8a38 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb24b), color-stop(100%,#ff8a38)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffb24b 0%,#ff8a38 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffb24b 0%,#ff8a38 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffb24b 0%,#ff8a38 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffb24b 0%,#ff8a38 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#ff8a38',GradientType=0 ); /* IE6-9 */
+	
+	outline: 0;
+	opacity: 0.6;
+	color: #fff;
+	box-shadow: none;
+}
+
+.item {
+	position: relative;
+}
+
+.item:hover{
+-webkit-box-shadow: -18px 3px 109px -65px rgba(0,0,0,0.75);
+-moz-box-shadow: -18px 3px 109px -65px rgba(0,0,0,0.75);
+box-shadow: -18px 3px 109px -65px rgba(0,0,0,0.75);
+transition:0.5s ;
+}
+
+.item span{
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	font-size: 40px;
+	color: black;
+	cursor: pointer;
+	opacity: 0;
+}
+.item:hover span{
+	opacity: 1;
+	transition: 0.5s;
+}
+.item:before{
+	content:"" ;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(238, 235, 230, 0.644);
+	opacity: 0;
+	position: absolute;
+}
+.item:hover:before{
+	opacity: 1;
+	transition:0.3s;
+
+}
+
+.footer-bottom {
+	margin-top: 60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #3d3d3d;
+	text-align: center;
+}
+
+.footer-bottom a:hover, .footer-bottom a:focus { 
+	color: ghostwhite; }
+
+.footer{
+	background-color: #45526e
+}
+
+#up {
+	background-color: #45526e;
+	z-index: 10;
+	order: 10;
+
+
+}
+
+
+.stickyButton {
+	position: fixed;
+	top: 90vh;
+	right:0;
+/*	margin-left: 85vw;*/
+}
+
+#sticky-parent {
+	position: relative;
+}
+
+/*social media button top*/
+
+.side-logo1{ 
+  border: none;
+  color: whitesmoke;
+ 
+  transform: scale(1.0);
+  transition: all 0.3s;
+  cursor: pointer;
+  
+}
+
+.side-logo1:hover{
+  transform: scale(1.5);
+  border-color: black;
+  transition-timing-function: ease-out;
+}
+
+
+
+
+/* Contact */
+#name, #email, #subject, #message {
+	font-size: 12px;
+}
+
+
+/*--------------------------------------------------------------
+# Interests
+--------------------------------------------------------------*/
+.interests .icon-box {
+/*  display: flex;*/
+  align-items: center;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: ease-in-out 0.3s;
+}
+
+.interests .icon-box i {
+  font-size: 32px;
+  padding-right: 5px;
+  line-height: 1;
+}
+
+.interests .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.interests .icon-box:hover {
+  background: rgba(255, 255, 255, 0.9);
+
+}
+
+
+
+#tools {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url(https://img.freepik.com/free-photo/working-businessman-modern-desk-illuminated-laptop-generated-by-ai_188544-23336.jpg?t=st=1690717509~exp=1690721109~hmac=dfc5e70ab503e798f1d51692fa7bfaba7a36ae3452de3142f69dff8c9a135796&w=826);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 3rem;
+  color: white;
+}
+
+
+#containerinterest2{
+
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.8;
+
+
+}
+
+#toolsicon{
+-webkit-box-shadow: 1px 4px 0px -40px rgba(250,249,247,1);
+-moz-box-shadow: 1px 4px 0px -40px rgba(250,249,247,1);
+box-shadow: 1px 4px 0px -40px rgba(250,249,247,1);
+}
+
+
+#brandeveloper{
+	font-family:tektur;
+	font-size: 35px;
+}
+
